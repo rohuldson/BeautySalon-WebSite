@@ -5,11 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>OriginSix</title>
-    <link rel="stylesheet" href="./assets/icon-style.css" type="text/css"/>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
+    <link rel="stylesheet" href="./assets/icon-style.css" type="text/css" />
     <link rel="stylesheet" href="style.css" type="text/css" />
   </head>
   <body>
-    <header id="header" >
+    <header id="header">
       <nav class="container">
         <a class="logo" href="#">beauty<span>salon</span>.</a>
         <div class="menu">
@@ -27,6 +32,7 @@
     </header>
 
     <main>
+      <!-- HOME -->
       <section class="section" id="home">
         <div class="container grid">
           <div class="image">
@@ -50,6 +56,7 @@
 
       <div class="divider-1"></div>
 
+      <!-- ABOUT -->
       <section class="section" id="about">
         <div class="container grid">
           <div class="image">
@@ -91,61 +98,155 @@
 
       <div class="divider-2"></div>
 
+      <!-- Services -->
       <section class="section" id="services">
         <div class="container grid">
           <header>
             <h2 class="title">Serviços</h2>
 
             <p>
-              Com mais de 10 anos no mercado, o <strong>Beautysalon </strong> já conquistou clientes
-              de inúmeros países com seus tratamentos exclusivos e totalmente
-              naturais
+              Com mais de 10 anos no mercado, o <strong>Beautysalon </strong> já
+              conquistou clientes de inúmeros países com seus tratamentos
+              exclusivos e totalmente naturais
             </p>
-  
           </header>
 
           <div class="cards grid">
+            <div class="card">
+              <i class="icon-woman-hair"></i>
+              <h3 class="title">Terapia capilar</h3>
 
-      
-          <div class="card ">
-            <i class="icon-woman-hair"></i>
-            <h3 class="title">Terapia capilar</h3>
+              <p>
+                Terapia completa para couro cabeludo e fios, protegendo todos os
+                tipos de cabelos, inclusive os longos e finos.
+              </p>
+            </div>
 
-            <p>
-              Terapia completa para couro cabeludo e fios, protegendo todos os
-              tipos de cabelos, inclusive os longos e finos.
-            </p>
+            <div class="card">
+              <i class="icon-trim"></i>
+
+              <h3 class="title">Cortes</h3>
+
+              <p>
+                A nossa equipe é repleta de profissionais renomados, famosos por
+                lançarem tendências com cortes diferenciados e clássicos.
+              </p>
+            </div>
+
+            <div class="card">
+              <i class="icon-cosmetic"></i>
+              <img src="" alt="" />
+              <h3 class="title">Tratamentos</h3>
+
+              <p>
+                O beautysalon conta com diversos tratamentos naturais e
+                totalmente veganos, para qualquer tipo de cabelo.
+              </p>
+            </div>
           </div>
-
-          <div class="card ">
-            <i class="icon-trim"></i>
-
-            <h3 class="title">Cortes</h3>
-
-            <p>
-              A nossa equipe é repleta de profissionais renomados, famosos por
-              lançarem tendências com cortes diferenciados e clássicos.
-            </p>
-          </div>
-
-          <div class="card ">
-            <i class="icon-cosmetic"></i>
-            <img src="" alt="" />
-            <h3 class="title">Tratamentos</h3>
-
-            <p>
-              O beautysalon conta com diversos tratamentos naturais e totalmente
-              veganos, para qualquer tipo de cabelo.
-            </p>
-          </div>
-
-        </div><!-- CARDS END -->
+          <!-- CARDS END -->
         </div>
         <!-- CONTAINER -->
       </section>
+
+      <div class="divider-1"></div>
+
+      <!-- TESTIMONIALS -->
+
+      <section class="section" id="testimonials">
+        <div class="container">
+          <header>
+            <h2 class="title">Depoimentos de quem já passou por aqui</h2>
+          </header>
+
+          <div class="testimonials swiper-container">
+            <div class="swiper-wrapper">
+              <div class="testimonial swiper-slide">
+                <blockquote>
+                  <p>
+                    <span>&ldquo;</span>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Dolorem impedit a doloribus vero pariatur accusamus ratione
+                    quasi.
+                  </p>
+                  <cite>
+                    <img src="assets/images/21.jpg" alt="" />
+                    Jéssica Vanessa
+                  </cite>
+                </blockquote>
+              </div>
+              <div class="testimonial swiper-slide">
+                <blockquote>
+                  <p>
+                    <span>&ldquo;</span>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Dolorem impedit a doloribus vero pariatur accusamus ratione
+                    quasi.
+                  </p>
+                  <cite>
+                    <img src="assets/images/mark.jpg" alt="" />
+                    Mark Tremmonti
+                  </cite>
+                </blockquote>
+              </div>
+
+              <div class="testimonial swiper-slide">
+                <blockquote>
+                  <p>
+                    <span>&ldquo;</span>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Dolorem impedit a doloribus vero pariatur accusamus ratione
+                    quasi.
+                  </p>
+                  <cite>
+                    <img src="assets/images/slash.jpg" alt="" />
+                    Slash
+                  </cite>
+                </blockquote>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+
+      <div class="divider-2"></div>
+
+      <!-- CONTACT -->
+
+      <section class="section" id="contact">
+        <div class="container grid">
+          <div class="text">
+            <h2 class="title">Entre em contato com a gente!</h2>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit, a est
+              placeat consequuntur itaque officiis ad. Dignissimos consectetur
+              quisquam eius? Eum maiores ex vero ad!
+            </p>
+           
+            <a href=" https://api.whatsapp.com/send?phone=55119963067045&text=Por favor, eu gostaria de agendar um horário?" class="button" target="_blank"
+              ><i class="icon-whatsapp"></i> Entrar em contato</a
+            >
+          </div>
+
+          <div class="links ">
+            <ul class="grid"> 
+              <li> <i class="icon-phone"></i>  11 996306-7044</li>
+              <li> <i class="icon-map-pin"></i>  R. dos códigos fonte</li>
+              <li> <i class="icon-mail"></i>  EntreEmcontato@eurespondo.com</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- SECTION CONTACT -->
     </main>
 
     <footer></footer>
+    <!-- swiper -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- scrollreveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
 
     <script src="main.js"></script>
   </body>
