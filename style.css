@@ -36,6 +36,10 @@ a {
   --text-color-light: hsl(0 0% 98%);
   --body-color: hsl(0 0% 98%);
   --gradient-01: ;
+
+  /* FONT SIZE */
+
+  --title-font-size: 1.875rem;
 }
 
 /* BASE */
@@ -51,7 +55,7 @@ body {
 }
 
 .title {
-  font: 700 1.875rem "Poppins", sans-serif;
+  font: 700 var(--title-font-size) "Poppins", sans-serif;
   color: var(--title-color);
   -webkit-font-smoothing: auto;
 }
@@ -94,8 +98,8 @@ body {
   background-color: var(--body-color);
 }
 
-#header.scroll{
-  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.3); ;
+#header.scroll {
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.3);
 }
 
 /*=====  NAV ================================= */
@@ -196,6 +200,10 @@ nav.show div.icon-close {
 
 .logo span {
   color: var(--base-color);
+}
+
+.logo-alt span {
+  color: var(--body-color);
 }
 
 main {
@@ -353,10 +361,9 @@ main {
   margin-bottom: 0.75rem;
 }
 
-
 /* ==== TESTIMONIALS ================================= */
 
-#testimonials{
+#testimonials {
   background: #fff;
 }
 
@@ -371,22 +378,17 @@ main {
   margin-bottom: 0;
 }
 
-
-
-#testimonials blockquote{
+#testimonials blockquote {
   padding: 2rem;
   box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.08);
-  border-radius: .25rem;
-
+  border-radius: 0.25rem;
 }
 
-#testimonials blockquote p{
+#testimonials blockquote p {
   position: relative;
   text-indent: 1.875rem;
   margin-bottom: 1.5rem;
   color: var(--title-color);
-  
-
 }
 
 #testimonials blockquote p span {
@@ -401,20 +403,16 @@ main {
   display: flex;
   align-items: center;
   font-style: normal;
-
 }
 
 #testimonials cite img {
   width: 2rem;
   height: 2rem;
- 
+
   object-fit: cover;
   clip-path: circle();
-  margin-right: .5rem;
-
-  
+  margin-right: 0.5rem;
 }
-
 
 /* SWIPER */
 .swiper-container {
@@ -425,13 +423,11 @@ main {
 .swiper-slide {
   height: auto;
   padding: 4rem 1rem;
-
 }
 
-.swiper-pagination-bullet-active { 
-   background: var(--base-color); 
+.swiper-pagination-bullet-active {
+  background: var(--base-color);
 }
-
 
 /* ==== Contact ================================= */
 
@@ -443,15 +439,14 @@ main {
   margin-bottom: 1rem;
 }
 
-#contact .text p{
+#contact .text p {
   margin-bottom: 2rem;
 }
 
 #contact .button i,
-#contact ul li i
- {
+#contact ul li i {
   font-size: 1.5rem;
-  margin-right: .625rem;
+  margin-right: 0.625rem;
 }
 
 #contact ul.grid {
@@ -466,3 +461,80 @@ main {
 #contact ul li i {
   color: var(--base-color);
 }
+
+/* FOOTER */
+
+footer {
+  background: var(--base-color);
+}
+
+footer .logo { 
+  display: inline-block;
+  margin-bottom: 1.5rem;
+}
+
+footer .brand p {
+  color: var(--text-color-light);
+  margin-bottom: 0.75rem;
+}
+
+footer i {
+  font-size: 1.5rem;
+  color: var(--text-color-light);
+}
+
+footer .social a {
+  margin-right: 2rem; 
+  transition: 0.3s;
+  display: inline-block;
+}
+
+footer .social a:hover {
+  transform: translateY(-8px);
+
+}
+
+.back-to-top {
+  background: var(--base-color);
+  position: fixed;
+  color: var(--text-color-light);
+  font-size: 1.5rem;
+  
+  right: 1rem;
+  bottom: 1rem;
+  padding: .5rem;
+  clip-path: circle();
+  line-height: 0;
+  visibility: hidden;
+  opacity: 0;
+  transition: .3s;
+  transform: translateY(100%);
+}
+
+.back-to-top.show {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0%);
+}
+
+
+/* Respobsive area */
+
+
+/* extra large devices: 1200 > */
+/* large devices 1023 > */
+/* large devices 992 > */
+@media (min-width: 992px) {
+  :root{
+    --title-font-size: 2.25rem;
+  }
+  .title {
+    font-size: 2.25rem;
+  }
+
+}
+
+/* medium devices 767 > */
+
+
+
